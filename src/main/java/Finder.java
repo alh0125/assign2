@@ -11,4 +11,17 @@ public class Finder {
         }
         return max;
     }
+
+    public java.lang.Integer findMin(int[] intArray){
+        if(intArray.length == 0 || intArray == null) {
+            return null;
+        }
+        int min = intArray[0];
+        for(int i = 1; i < intArray.length;i++) {
+            if(min < intArray[i]) {
+                min = intArray[i];
+            }
+        }
+        return min;
+    }
 }
